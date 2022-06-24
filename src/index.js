@@ -3,8 +3,6 @@ const typeDefs = require("./schema");
 const resolvers = require("./resolvers");
 const TrackAPI = require("./datasources/track-api");
 
-require("dotenv").config();
-
 async function startApolloServer(typeDefs, resolvers) {
   const server = new ApolloServer({
     typeDefs,
